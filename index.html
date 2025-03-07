@@ -1,12 +1,32 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Barrio El Pesebre</title>
+    <title>Página Barrio El Pesebre</title>
+    <link rel="stylesheet" href="estilos.css">
+
+
 </head>
 <body>
+    <section class="Fotografia-Barrio-El-Pesebre">
+        <img src="FOTO_21.jpeg" alt="Foto de mi barrio">
+        <div class="texto-sobre-imagen">
+            <h1>Barrio El Pesebre</h1>
+            <h2>Localidad Rafael Uribe Uribe</h2>
+        </div>
+    </section>
+    
+    <section class="mapa-barrio">
+        <div class="contenedor-mapas">
+            <div class="mapa vectorial" id="mapa-vectorial"></div>
+            <div class="mapa raster" id="mapa-raster"></div>
+            <div class="slider" id="slider"></div>
+        </div>
+    </section>
+    
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="programa.js"></script>
     
 </body>
 </html>
-
- ""

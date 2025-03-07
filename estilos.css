@@ -1,0 +1,96 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fotografia-barrio-el-pesebre {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.fotografia-barrio-el-pesebre img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; /* Esto pone la imagen como fondo */
+    top: 0;
+    left: 0;
+}
+
+.texto-sobre-imagen {
+    position: relative; /* Ahora se posiciona dentro del flex */
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para que se lea mejor */
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+.texto-sobre-imagen h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.texto-sobre-imagen h2 {
+    font-size: 24px;
+    margin: 5px 0 0 0;
+}
+
+#seccion 2
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mapa-barrio {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.contenedor-mapas {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.mapa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.vectorial {
+    z-index: 5;
+    clip-path: inset(0 50% 0 0); /* Mostrar solo la mitad izquierda */
+}
+
+.raster {
+    z-index: 4;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/4/4e/Medellin_satelital.png') center/cover no-repeat;
+    clip-path: inset(0 0 0 50%); /* Mostrar solo la mitad derecha */
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 6px;
+    background: #fff;
+    cursor: ew-resize;
+    z-index: 10;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
